@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "424076389928",
+    "firebase_url": "https://summerintern-f73d7.firebaseio.com",
+    "project_id": "summerintern-f73d7",
+    "storage_bucket": "summerintern-f73d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424076389928:android:82cace276457d2f8",
+        "android_client_info": {
+          "package_name": "com.rgukt.summerintern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424076389928-7egqblrq3thsfaqj2snb5i48l0ed48a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rgukt.summerintern",
+            "certificate_hash": "54c2879b8a98148397a943f7c53306ee1469d46b"
+          }
+        },
+        {
+          "client_id": "424076389928-g82to700jouo5ba6qk81696627vpqd1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rgukt.summerintern",
+            "certificate_hash": "d0777eb00f5a141d271e8d2b6e01dbad9643a285"
+          }
+        },
+        {
+          "client_id": "424076389928-pgtaeofeaqer45gouhbkilgnktk5hbi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlPaJj8NNvtbs1eJWiitlQ35bqnsydvfw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424076389928-pgtaeofeaqer45gouhbkilgnktk5hbi6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

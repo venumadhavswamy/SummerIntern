@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_profile_Contact"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView_name_Contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_last_updated_contact"
+        app:layout_constraintStart_toEndOf="@+id/imageView_profile_Contact"
+        app:layout_constraintTop_toTopOf="@+id/imageView_profile_Contact"
+        tools:text="Venu" />
+
+    <ImageView
+        android:id="@+id/imageView_location_Contact"
+        android:onClick="openLocation"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_profile_Contact"
+        app:srcCompat="@drawable/ic_location_24dp" />
+
+    <TextView
+        android:id="@+id/textView_status_Contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_location_Contact"
+        app:layout_constraintStart_toStartOf="@+id/textView_name_Contact"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name_Contact"
+        tools:text="On ride" />
+
+    <TextView
+        android:id="@+id/textView_last_updated_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_location_Contact"
+        app:layout_constraintTop_toTopOf="@+id/textView_name_Contact"
+        tools:text="8:19PM" />
+</android.support.constraint.ConstraintLayout>

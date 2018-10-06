@@ -1,6 +1,32 @@
 <resources>
-    <string name="app_name">Summer Intern</string>
+    <string name="app_name">Saathi</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_add_contact">Add contact</string>
+
+    <!--Home Menu-->
+    <string name="menu_home_help">Help</string>
+    <string name="menu_home_privacy">Privacy</string>
+
+    <!--Contacts Menu-->
+    <string name="menu_contacts_location_privacy">Location Privacy</string>
+    <string name="menu_contacts_message_privacy">Message Privacy</string>
+    <string name="menu_contacts_add_person">Add Person</string>
+
+    <!--Add Contacts-->
+    <string name="name_placeholder">Name</string>
+    <string name="mobile_number_placeholder">Mobile Number</string>
+    <string name="button_save">SAVE</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <!--Login-->
+    <string name="verify_mobile">Verify Mobile Number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="proceed">PROCEED</string>
+    <string name="verify_mobile_description">OTP will be sent your Mobile Number</string>
+    <string name="next">NEXT</string>
+    <string name="available_in_india">\@Available only in INDIA</string>
+
 </resources>

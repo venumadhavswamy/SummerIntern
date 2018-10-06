@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="?android:attr/windowBackground"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <ImageView
+        android:id="@+id/imageView_profile_ProfileActivity"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_pic" />
+
+    <TextView
+        android:id="@+id/textView_name_profileActivity"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/transparentBlack"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_profile_ProfileActivity"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageView_profile_ProfileActivity"
+        tools:includeFontPadding="false" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:onClick="editName"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@color/transparentBlack"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_profile_ProfileActivity"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_profile_ProfileActivity"
+        app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/button_image_edit"
+        android:onClick="pickImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circular_shape"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_profile_ProfileActivity"
+        app:layout_constraintTop_toTopOf="@+id/imageView_profile_ProfileActivity"
+        app:srcCompat="@drawable/ic_edit_user" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_mobileNumber_profileActivity"
+        app:srcCompat="@drawable/ic_call_green_24dp" />
+
+    <TextView
+        android:id="@+id/textView_mobileNumber_profileActivity"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center|left"
+        android:text=""
+        android:textColor="@color/lightBlack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_profile_ProfileActivity"
+        tools:text="+918712220844" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="CHANGE"
+        android:textColor="@color/mainColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_mobileNumber_profileActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_mobileNumber_profileActivity" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left|center"
+        android:onClick="deleteAccount"
+        android:text="Delete account"
+        android:textColor="@color/lightBlack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mobileNumber_profileActivity" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_profileActivity"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_profile_ProfileActivity"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_profile_ProfileActivity"
+        app:layout_constraintStart_toStartOf="@+id/imageView_profile_ProfileActivity"
+        app:layout_constraintTop_toTopOf="@+id/imageView_profile_ProfileActivity" />
+
+</android.support.constraint.ConstraintLayout>
